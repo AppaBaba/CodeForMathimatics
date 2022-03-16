@@ -27,10 +27,11 @@ def LinePlot(m, b, c, t):
     plot(x,y, c)
     title(t)
 
+# min and max x
 xl = -5
 xr =  5
 
-# 100 linearly spaced numbers
+# Limits of x with 100 spaced number
 x = linspace(xl,xr,100)
 
 
