@@ -1,6 +1,6 @@
 # Code For Mathimatics
 
-Back in high school I use to draw beautiful plot on graphic paper.
+Back in high school I use to draw beautiful plots on graphic paper.
 Well, to me they looked cool. After multiple advance math classes
 my graphing did not look so good. So, several years later I was taking
 some refresher courses. Knowing that I did not have it in me to draw those
