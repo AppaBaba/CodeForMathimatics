@@ -22,7 +22,6 @@ def Line(m, b):
     return y
 
 def LinePlot(m, b, c, t):
-
     y = Line(m, b)
     plot(x,y, c)
     title(t)
