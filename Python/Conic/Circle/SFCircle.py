@@ -1,5 +1,5 @@
 from numpy import linspace, sqrt
-from pylab import plot, show, gca
+from pylab import plot, title, show, gca
 
 # (x-h)^2 + (y-k)^2 = r^2
 # (y-k)^2 = r^2 - (x-h)^2
@@ -17,4 +17,5 @@ y = sqrt(r**2 - (x-h)**2)
 plot(x, k + y,'b')
 plot(x, k - y,'b')
 gca().set_aspect('equal')
+title("Standard Equation for a Circle")
 show()
