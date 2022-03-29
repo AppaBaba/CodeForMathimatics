@@ -4,7 +4,7 @@ from pylab import figure, subplots, axhline, axvline, contour, title, show
 # Standar Conic Ellipe
 # (x -h)^2/a^2 + (y -k)^2/b^2 = 1
 
-def axes():
+def axis():
     axhline(0, alpha=.2, c = 'c')
     axvline(0, alpha=.2, c = 'c')
 
@@ -17,13 +17,13 @@ def syaellipe(a,b,h,k):
     return syae
 
 def PlotXAEllipe(a,b,h,k,c,t):
-    axes()
+    axis()
     sxae = sxaellipe(a,b,h,k)
     contour(x, y, sxae, [1], colors=c)
     title(t)
 
 def PlotYAEllipe(a,b,h,k,c,t):
-    axes()
+    axis()
     syae = syaellipe(a,b,h,k)
     contour(x, y, syae, [1], colors=c)
     title(t)
