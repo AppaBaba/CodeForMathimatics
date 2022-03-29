@@ -8,22 +8,24 @@ def axes():
     axhline(0, alpha=.2, c = 'c')
     axvline(0, alpha=.2, c = 'c')
 
-def scircle(a,b,h,k):
-    sc = (x - h)**2/a**2 + (y - k)**2/b**2
-    return sc
+def sxaellipe(a,b,h,k):
+    sxae = (x - h)**2/a**2 + (y - k)**2/b**2
+    return sxae
 
-def PlotCircle(a,b,h,k,c,t):
-    sc = scircle(a,b,h,k)
-    contour(x, y, sc, [1], colors=c)
+def syaellipe(a,b,h,k):
+    syae = (x - h)**2/b**2 + (y - k)**2/a**2
+    return syae
+
+def PlotXAEllipe(a,b,h,k,c,t):
+    axes()
+    sxae = sxaellipe(a,b,h,k)
+    contour(x, y, sxae, [1], colors=c)
     title(t)
 
-def sellipe(a,b,h,k):
-    se = (x - h)**2/a**2 + (y - k)**2/b**2
-    return se
-
-def PlotEllipe(a,b,h,k,c,t):
-    se = sellipe(a,b,h,k)
-    contour(x, y, se, [1], colors=c)
+def PlotYAEllipe(a,b,h,k,c,t):
+    axes()
+    syae = syaellipe(a,b,h,k)
+    contour(x, y, syae, [1], colors=c)
     title(t)
 
 x = linspace(-8, 8, 200)
@@ -36,28 +38,24 @@ fig = figure()
 
 ax = fig.add_subplot(2, 2, 1)
 
-a = 4
-b = a
+a = 5
+b = 3
 h = 0
 k = 0
 c = 'r'
-t = 'Simple Circle'
-
-axes()
-PlotCircle(a,b,h,k,c,t)
-
+t = 'Simple X-Axis Ellipe'
+PlotXAEllipe(a,b,h,k,c,t)
 
 ax = fig.add_subplot(2, 2, 2)
 
-a = 4
-b = a
-h = 1
+a = 5
+b = 3
+h = 2
 k = 1
 c = 'g'
-t = 'Standar Circle'
+t = 'Standar X-Axis Ellipe'
 
-axes()
-PlotCircle(a,b,h,k,c,t)
+PlotXAEllipe(a,b,h,k,c,t)
 
 ax = fig.add_subplot(2, 2, 3)
 
@@ -66,22 +64,16 @@ b = 3
 h = 0
 k = 0
 c = 'b'
-t = 'Simple Ellipe'
-
-axes()
-PlotEllipe(a,b,h,k,c,t)
+t = 'Simple Y-Axis Ellipe'
+PlotYAEllipe(a,b,h,k,c,t)
 
 ax = fig.add_subplot(2, 2, 4)
-
-a = 5
-b = 3
-h = 2
-k = 1
+a = 4
+b = 2
+h = .5
+k = .5
 c = 'm'
-t = 'Standar Ellipe'
-
-axes()
-PlotEllipe(a,b,h,k,c,t)
-
+t = 'Standar Y-Axis Ellipe'
+PlotYAEllipe(a,b,h,k,c,t)
 
 show()
