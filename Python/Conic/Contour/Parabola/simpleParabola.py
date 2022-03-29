@@ -1,7 +1,7 @@
 from numpy import linspace, meshgrid
 from pylab import figure, subplots, axhline, axvline, contour, show
 
-def axes():
+def axis():
     axhline(0, alpha=.2, c = 'c')
     axvline(0, alpha=.2, c = 'c')
 
@@ -30,27 +30,27 @@ fig = figure()
 ax = fig.add_subplot(2, 2, 1)
 
 a = .4
-axes()
+axis()
 xap = xaparabola(a)
 contour(x, y, xap, [0], colors='b')
 
 ax = fig.add_subplot(2, 2, 2)
 
 a = .4
-axes()
+axis()
 yap = yaparabola(a)
 contour(x, y, yap, [0], colors='b')
 
 ax = fig.add_subplot(2, 2, 3)
 
 a = -.4
-axes()
+axis()
 xap = xaparabola(a)
 contour(x, y, xap, [0], colors='b')
 
 ax = fig.add_subplot(2, 2, 4)
 a = -.4
-axes()
+axis()
 yap = yaparabola(a)
 contour(x, y, yap, [0], colors='b')
 
