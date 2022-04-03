@@ -1,5 +1,5 @@
 from numpy import linspace
-from matplotlib.pyplot import figure, subplots, title, xlabel, ylabel, legend, xlim, ylim, grid, suptitle, axis, plot, show
+from matplotlib.pyplot import*
 
 # Standard Form
 # y = ax^2 + bx + c
