@@ -1,4 +1,4 @@
-from matplotlib.pyplot import figure, subplots, title, suptitle, plot, show
+from matplotlib.pyplot import*
 from numpy import linspace
 
 # generl linear euation
