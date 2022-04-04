@@ -100,7 +100,7 @@ ax = fig.add_subplot(4, 2, 1)
 r = 2
 h = 1
 k = 1
-c = 'b'
+c = 'r'
 t = 'Standar Form Circle'
 CirclePlot(r,h,k,c,t)
 
@@ -108,7 +108,7 @@ ax = fig.add_subplot(4, 2, 2)
 r = 2
 h = -1 
 k = -1
-c = 'm'
+c = 'g'
 t = 'Standar Form Circle'
 CirclePlot(r,h,k,c,t)
 
@@ -117,7 +117,7 @@ a = 5
 b = 3
 h = 2
 k = 1
-c = 'g'
+c = 'b'
 t = 'Standar X-Axis Ellipe'
 PlotXAEllipe(a,b,h,k,c,t)
 
@@ -135,7 +135,7 @@ a = 2
 b = 1
 h = 2
 k = 1
-c = 'g'
+c = 'r'
 t = 'Offset HT-Axis Hyperbola'
 PlotHAHyperbola(a,b,h,k,c,t)
 
@@ -144,7 +144,7 @@ a = 2
 b = 1
 h = 2
 k = 1
-c = 'm'
+c = 'g'
 t = 'Offset VT-Axis Hyperbola'
 PlotVAHyperbola(a,b,h,k,c,t)
 
