@@ -1,6 +1,6 @@
-from matplotlib.pyplot import subplot, plot, legend, grid, suptitle, show
+from matplotlib.pyplot import subplot, legend, plot, grid, suptitle, show
+from numpy import arange
 from scipy.misc import derivative
-from numpy import linspace
 
 def plotspec(ax):
     ax.spines['left'].set_position('zero')
@@ -8,24 +8,27 @@ def plotspec(ax):
     ax.spines['bottom'].set_position('zero')
     ax.spines['top'].set_color('none')
 
-# f(x)
 def f(x):
-	return x**3
-# d/dx 
+    return x**2
 def d(x):
-	return derivative(f, x)
+    return derivative(f, x)
 
 # x-axis
-y = linspace(-4, 4)
+x = arange(-2.0, 2.0, 0.01)
+
 ax = subplot(1,1,1)
 plotspec(ax)
-# plot f(x)
-plot(y, f(y), color='g', label='F(x)')
-# plot d/dx
-plot(y, d(y), color='m', label='d/dx')
 
-# plot format
+y = f(x)
+# plot f(x)
+plot(x, y, color='g', label='f(x)')
+
+yp = derivative(f, x)
+# plot d/dx
+plot(x, d(x), color='m', label='d/dx')
+
 legend(loc='lower right')
 grid(True)
-suptitle('f(x) = x^3')
+suptitle('f(x) = x^2')
+
 show()
