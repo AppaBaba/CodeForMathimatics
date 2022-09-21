@@ -1,4 +1,4 @@
-# Code For Mathimatics
+# Plotting Mathimatic Functions
 
 Back in high school I use to draw beautiful plots on graphic paper.
 Well, to me they looked cool. After multiple advance math classes
