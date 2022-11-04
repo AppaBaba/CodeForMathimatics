@@ -1,5 +1,5 @@
-# Simple Calculator Python Program
-# Pyyhon 3.9 with IDLE
+# Python Basic Calculator 2 Program
+# Pyyhon 3.10 with IDLE
 # Code can be used Anaconda and Spyder
 # Runs on Mac and PC
 
@@ -27,37 +27,37 @@ def input2num():
 
 def menu():
     print("Press key -\n"
-		"a to Add\n"
-		"s to Subtract\n"
-		"m to Multiply\n" 
-		"d to Divide\n"
-        "e to Exit\n")
+		"add to Add\n"
+		"sub to Subtract\n"
+		"mul to Multiply\n" 
+		"dev to Divide\n"
+                "exit to Exit\n")
     
     # Take input from the user
-    select = input("Select operation a, s, m, d, e :")
+    select = input("Select operation:")
     
     
-    if select == 'a':
+    if select == 'add':
         (n1, n2) = input2num()
         print(n1, "+", n2, "=", add(n1, n2))
         status = 0
         return status
-    elif select == 's':
+    elif select == 'sub':
         (n1, n2) = input2num()
         print(n1, "-", n2, "=", sub(n1, n2))
         status = 0
         return status
-    elif select == 'm':
+    elif select == 'mul':
         (n1, n2) = input2num()
         print(n1, "*", n2, "=", mul(n1, n2))
         status = 0
         return status
-    elif select == 'd':
+    elif select == 'div':
         (n1, n2) = input2num()
         print(n1, "/", n2, "=", div(n1, n2))
         status = 0
         return status
-    elif select == 'e':
+    elif select == 'exit':
         status = 1
         return status
     else:
