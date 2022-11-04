@@ -1,5 +1,5 @@
-# Simple Calculator Python Program
-# Pyyhon 3.9 with IDLE
+# Python Scientific Calculator Program
+# Pyyhon 3.10 with IDLE
 # Code can be used Anaconda and Spyder
 # Runs on Mac and PC
 
